@@ -5,5 +5,10 @@ while answer not in valid_answers:
     answer = input('Rock, paper, scissors....shoot! ').lower()
     if answer not in valid_answers:
         print("Try again, invalid option.")
-#Tested....loop works! 
+#Tested....loop works 
 
+import random
+
+computer_answer = random.choice(valid_answers)
+print(f"Computer chose: {computer_answer}")
+#Tested....computer gives a valid answer
