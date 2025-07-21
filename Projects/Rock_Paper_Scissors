@@ -1,0 +1,9 @@
+valid_answers = ['rock', 'paper', 'scissors']
+answer = "" 
+
+while answer not in valid_answers:
+    answer = input('Rock, paper, scissors....shoot! ').lower()
+    if answer not in valid_answers:
+        print("Try again, invalid option.")
+#Tested....loop works! 
+
