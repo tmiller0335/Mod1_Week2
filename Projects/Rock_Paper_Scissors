@@ -12,3 +12,18 @@ import random
 computer_answer = random.choice(valid_answers)
 print(f"Computer chose: {computer_answer}")
 #Tested....computer gives a valid answer
+
+print(f"You chose: {answer}")
+#Tested....user gives a valid answer
+
+if answer == computer_answer:
+    print("Tie")
+elif (
+    (answer == 'rock' and computer_answer == 'scissors') or 
+    (answer == 'paper' and computer_answer == 'rock') or 
+    (answer == 'scissors' and computer_answer == 'paper')
+    ):
+    print("You win!")
+else:
+    print("You lose!")
+#Tested....game logic works, and all outcomes are covered
